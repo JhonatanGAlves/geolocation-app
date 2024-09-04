@@ -1,50 +1,83 @@
-# React + TypeScript + Vite
+# Geolocation App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<h1 align="center">
+   <img src="./public/readme/geolocation-app.gif">
+</h1>
 
-Currently, two official plugins are available:
+<div align="center">
+   <a href="#desktop_computer-project">
+      <img src="https://img.shields.io/badge/PROJECT-8047F8?style=for-the-badge&logo=react&logoColor=white" />
+   </a>
+   <a href="#technologist-technologies">
+      <img src="https://img.shields.io/badge/TECHNOLOGIES-8047F8?style=for-the-badge&logo=codacy&logoColor=white" />
+   </a>
+   <a href="#clipboard-how-to-use">
+      <img src="https://img.shields.io/badge/HOW_TO_USE-8047F8?style=for-the-badge&logo=visual-studio-code&logoColor=white" />
+   </a>
+   <a href="#speech_balloon-contact">
+      <img src="https://img.shields.io/badge/CONTACT-8047F8?style=for-the-badge&logo=maildotru&logoColor=white" />
+   </a>
+</div>
+<br>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## :desktop_computer: Project
 
-## Expanding the ESLint configuration
+A React-based geolocation application utilizing the Leaflet library. Users can click on the map to add pins, each representing a location. Clicking on a pin opens a Bootstrap 5 modal displaying detailed information about the pin's latitude and longitude, including its address.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## :technologist: Technologies Used
 
-- Configure the top-level `parserOptions` property like this:
+- React
+- TypeScript
+- Bootstrap 5
+- Tailwind CSS
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## :clipboard: How to Use
+
+To get a local copy of the project up and running, follow these steps.
+
+### Prerequisites
+
+Make sure you have the following installed on your machine:
+
+- [Node.js](https://nodejs.org/) (v18 or higher)
+- [Git](https://git-scm.com/)
+
+### Installation
+
+1. **Clone the repository**:
+
+```bash
+   git clone https://github.com/JhonatanGAlves/geolocation-app.git
+   cd geolocation-app
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+2. **Install dependencies:**:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+   npm install
 ```
+
+3. **Start the application:**<br/>
+
+```bash
+   npm run dev
+```
+
+## License
+
+This project is licensed under the MIT License.
+
+## :speech_balloon: Contact
+
+<br>
+<div align="center">
+   <a href="https://jhonatandev-alves-app.vercel.app/" target="_blank">
+      <img src="https://img.shields.io/badge/PORTFOLIO-8047F8?style=for-the-badge&logo=codeium&logoColor=white">
+   </a>
+   <a href="https://www.linkedin.com/in/jhonatan-alves-11b28015b/" target="_blank">
+      <img src="https://img.shields.io/badge/LINKEDIN-8047F8?style=for-the-badge&logo=linkedin&logoColor=white" />
+   </a>
+   <a href="mailto:jhonatan.galves1996@gmail.com">
+      <img src="https://img.shields.io/badge/EMAIL-8047F8?style=for-the-badge&logo=gmail&logoColor=white" />
+   </a>
+</div>
